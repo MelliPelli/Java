@@ -3,7 +3,7 @@
 
 
 
-Tady mám program v Javě.
+Zde mám program v Javě.
 
 
 
