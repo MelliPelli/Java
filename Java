@@ -1,0 +1,41 @@
+package generate;
+
+import java.util.Scanner;
+
+public class Generate {
+
+    
+    public static void main(String[] args) {  
+        /*Skenuje napsané hodnoty*/
+        Scanner sc = new Scanner( System.in );
+        System.out.println( "Napiš cokoli:");
+        String name = sc.nextLine();
+        count(name);
+        
+    /* Vypíše hodnoty do řádků*/    
+        
+    int length = name.length();   
+    char c;
+    for(int i=0;i<length;i++) {
+        c  = name.charAt(i);
+     System.out.println(c); 
+    }  
+        
+    }
+    
+    /*Vypočítá velikost z napsané hodnoty*/
+    
+     public static void count(String x){
+		char[] ch = x.toCharArray();
+		int sum = 0;   
+        for(int i = 0; i < x.length(); i++){
+			if(Character.isLetter(ch[i])){
+				sum ++ ;
+                                
+			}
+        
+} 
+    System.out.println("sum: " + sum);
+} 
+     
+}   
